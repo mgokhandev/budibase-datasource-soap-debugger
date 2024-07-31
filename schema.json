@@ -1,0 +1,78 @@
+{
+  "type": "datasource",
+  "metadata": {},
+  "schema": {
+    "docs": "https://www.npmjs.com/package/soap#clientmethodasyncargs-options---call-method-on-the-soap-service",
+    "friendlyName": "SOAP",
+    "type": "API",
+    "description": "Performs a basic SOAP call to a web service",
+    "datasource": {
+      "url": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "query": {
+      "create": {
+        "type": "fields",
+        "readable": true,
+        "fields": {
+          "soapAction": {
+            "type": "string",
+            "required": false,
+            "display": "SOAP Action"
+          },
+          "body": {
+            "type": "json",
+            "required": false
+          }
+        }
+      },
+      "update": {
+        "type": "fields",
+        "readable": true,
+        "fields": {
+          "soapAction": {
+            "type": "string",
+            "required": false,
+            "display": "SOAP Action"
+          },
+          "body": {
+            "type": "json",
+            "required": false
+          }
+        }
+      },
+      "read": {
+        "type": "fields",
+        "readable": true,
+        "fields": {
+          "soapAction": {
+            "type": "string",
+            "required": false,
+            "display": "SOAP Action"
+          },
+          "body": {
+            "type": "json",
+            "required": false
+          }
+        }
+      },
+      "delete": {
+        "type": "fields",
+        "readable": true,
+        "fields": {
+          "soapAction": {
+            "type": "string",
+            "required": false,
+            "display": "SOAP Action"
+          },
+          "body": {
+            "type": "json",
+            "required": false
+          }
+        }
+      }
+    }
+  }
+}
